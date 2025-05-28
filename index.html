@@ -6,21 +6,20 @@
     <title>Assignment 2</title>
     <script> 
     const hour = new Date().getHours();
-    let backgroundColor = "white";
-        if (hour >= 6 && hour < 12) {
-            backgroundColor = "Blue";
-        }
-        else if (hour >= 12 && hour < 18){
-            backgroundColor = "Orange";
-        }
-        else if (hour >=18 && hour < 21){
-            backgroundColor = "Purple";
-        }
-        else if(hour >= 21 && hour < 6){
-            backgroundColor = "Black";
-        }
+    let bg = 'white';
 
-        document.style.backgroundColor = backgroundColor;
+    if (hour >= 6 && hour < 12) {
+      bg = 'blue';
+    } else if (hour >= 12 && hour < 18) {
+      bg = 'orange';
+    } else if (hour >= 18 && hour < 21) {
+      bg = 'purple';
+    } else {
+      // covers hour >= 21 OR hour < 6
+      bg = 'black';
+    }
+
+    document.body.style.backgroundColor = bg;
 
     </script>
 </head>
