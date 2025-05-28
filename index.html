@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <title>Assignment 2</title>
+    <script> 
+    const hour = new Date().getHours();
+    let backgroundColor = "white";
+        if (hour >= 6 && hour < 12) {
+            backgroundColor = "Blue";
+        }
+        else if (hour >= 12 && hour < 18){
+            backgroundColor = "Orange";
+        }
+        else if (hour >=18 && hour < 21){
+            backgroundColor = "Purple";
+        }
+        else if(hour >= 21 && hour < 6){
+            backgroundColor = "Black";
+        }
+
+        document.style.backgroundColor = backgroundColor;
+
+    </script>
+</head>
+<body>
+    <!-- putting the webpage content-->
+     <h1>Wesley Yawn </h1>
+     <h1>COP4813 - Web Applications Programming</h1>
+     <h1>Computer Science</h1>
+     <h2>Welcome to my dynamic webpage!</h2>
+</body>
+</html>
