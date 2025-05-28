@@ -19,13 +19,17 @@
 
     if (hour >= 6 && hour < 12) {
       bg = 'blue';
+      text="black";
     } else if (hour >= 12 && hour < 18) {
       bg = 'orange';
+      text="black";
     } else if (hour >= 18 && hour < 21) {
       bg = 'purple';
+      text="white";
     } else {
       // covers hour >= 21 OR hour < 6
       bg = 'black';
+      text="white";
     }
 
     document.body.style.backgroundColor = bg;
