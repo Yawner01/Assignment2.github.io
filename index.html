@@ -12,27 +12,27 @@
      <h1>Computer Science</h1>
      <h2>Welcome to my dynamic webpage!</h2>
     <script>
-  // run after the body exists
   window.addEventListener('DOMContentLoaded', () => {
     const hour = new Date().getHours();
     let bg = 'white';
+    let textColor = 'black';       // ← default
 
     if (hour >= 6 && hour < 12) {
       bg = 'blue';
-      textcolor="black";
+      textColor = 'black';
     } else if (hour >= 12 && hour < 18) {
       bg = 'orange';
-      textcolor="black";
+      textColor = 'black';
     } else if (hour >= 18 && hour < 21) {
       bg = 'purple';
-      textcolor="white";
+      textColor = 'white';
     } else {
-      // covers hour >= 21 OR hour < 6
       bg = 'black';
-      textcolor="white";
+      textColor = 'white';
     }
 
     document.body.style.backgroundColor = bg;
+    document.body.style.color = textColor;   // ← apply text color
   });
 </script>
 </body>
